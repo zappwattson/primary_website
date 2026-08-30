@@ -1,20 +1,164 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>Zapp Wattson - Coming Soon</title>
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon16.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon32.png">
-  <link rel="icon" type="image/png" sizes="48x48" href="/favicon48.png">
+<meta charset="UTF-8">
+<title>Zapp Wattson - VTuber</title>
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Schibsted+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon32.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="images/favicon48.png">
 <style>
-body { margin: 0; background: #8e8e8e; color: black; font-family: Arial, sans-serif; text-align: center; }
-h1 { margin-top: 45vh; margin-bottom: 0; }
-p { margin-top: 5px; }
-footer { position: fixed; bottom: 10px; width: 100%; }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    min-height: 100vh;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Schibsted Grotesk', sans-serif;
+    background:
+      linear-gradient(to bottom, rgba(40, 48, 77, .75), rgba(26, 100, 153, .75), rgba(40, 48, 77, .75)),
+      url('images/Background_Texture.jpg') center / cover fixed no-repeat;
+  }
+
+  .main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card {
+    width: min(90%, 720px);
+    overflow: hidden;
+    border-radius: 20px;
+    background: linear-gradient(60deg, #3E3C4F 60%, #B0B0B0);
+  }
+
+  .banner {
+    position: relative;
+    aspect-ratio: 16 / 7;
+    background: url('images/ZappWattson_banner.jpg') center / cover;
+  }
+
+  .banner::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(45deg, rgba(62, 60, 79, .9) 13%, rgba(166, 169, 255, .22));
+  }
+
+  .banner-text {
+    position: absolute;
+    left: 5%;
+    right: 5%;
+    bottom: 6%;
+    z-index: 1;
+  }
+
+  .banner-text h1 {
+    font: 400 clamp(24px, 6vw, 50px) / 1.1 'Russo One', sans-serif;
+    letter-spacing: -.01em;
+    color: #fff;
+  }
+
+  .banner-text p {
+    margin-top: 8px;
+    font: 400 clamp(11px, 2.2vw, 14px) 'Russo One', sans-serif;
+    color: #fff;
+  }
+
+  .body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 28px 32px 32px;
+    flex-wrap: wrap;
+  }
+
+  .socials {
+    display: flex;
+    gap: 18px;
+  }
+
+  .socials a {
+    display: flex;
+    align-items: center;
+    height: 26px;
+  }
+
+  .socials svg {
+    display: block;
+    height: 100%;
+    width: auto;
+  }
+
+  .socials path {
+    fill: #ADE7FF;
+    transition: fill .15s ease;
+  }
+
+  .socials a:hover path {
+    fill: #fff;
+  }
+
+  .youtube-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 13px 26px;
+    border: 0;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #5819A8, #78BEFF);
+    color: #fff;
+    font: 600 15px 'Schibsted Grotesk', sans-serif;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  .youtube-button svg {
+    width: 18px;
+    height: 18px;
+  }
 </style>
 </head>
 <body>
-<h1>Zapp Wattson</h1>
-<p>Coming soon...</p>
-<footer>© 2026 Zapp Wattson · All rights reserved</footer>
+
+<div class="main">
+  <div class="card">
+    <div class="banner">
+      <div class="banner-text">
+        <h1>Zapp<br>Wattson</h1>
+        <p>I'm Zapp Wattson, your electrifying VTuber friend that loves all things video games and tech!</p>
+      </div>
+    </div>
+
+    <div class="body">
+      <div class="socials">
+        <a href="https://x.com/ZappWattson" target="_blank" rel="noopener" aria-label="Twitter">
+          <svg viewBox="0.5 1.88 23 18.55"><path d="M23 4.5c-.8.36-1.66.6-2.56.71a4.48 4.48 0 0 0 1.96-2.48 8.9 8.9 0 0 1-2.83 1.08 4.44 4.44 0 0 0-7.58 4.05A12.6 12.6 0 0 1 2.9 3.15a4.44 4.44 0 0 0 1.38 5.93 4.4 4.4 0 0 1-2.01-.56v.06a4.45 4.45 0 0 0 3.57 4.36 4.5 4.5 0 0 1-2 .08 4.45 4.45 0 0 0 4.15 3.08A8.92 8.92 0 0 1 1 17.93a12.57 12.57 0 0 0 6.81 2c8.17 0 12.64-6.77 12.64-12.64 0-.19 0-.38-.02-.57A9.05 9.05 0 0 0 23 4.5z"/></svg>
+        </a>
+        <a href="https://bsky.app/profile/zappwattson.bsky.social" target="_blank" rel="noopener" aria-label="Bluesky">
+          <svg viewBox="2.3 2.41 19.4 17.09"><path d="M12 8.6C10.6 5.9 7.9 3.5 5.4 3c-1.5-.3-2.6.1-2.6 1.9 0 .8.5 4.7.8 5.4.9 2.5 3.5 3.3 5.9 3-.1 0-3.7.7-4.5 2.7-.6 1.5.6 3 2.3 3 1.9 0 3.9-1.6 4.7-3.4.8 1.8 2.8 3.4 4.7 3.4 1.7 0 2.9-1.5 2.3-3-.8-2-4.4-2.7-4.5-2.7 2.4.3 5-.5 5.9-3 .3-.7.8-4.6.8-5.4 0-1.8-1.1-2.2-2.6-1.9-2.5.5-5.2 2.9-6.6 5.6z"/></svg>
+        </a>
+        <a href="https://instagram.com/zappwattson/" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 16 16"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.282.11-.705.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.668 2.668 0 1 1 0 5.335 2.668 2.668 0 0 1 0-5.335z"/></svg>
+        </a>
+      </div>
+
+      <a class="youtube-button" href="https://www.youtube.com/@ZappWattson" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="#FFFFFF"><path d="M21.6 7.2s-.2-1.5-.8-2.2c-.8-.8-1.7-.8-2.1-.9C15.9 4 12 4 12 4h0s-3.9 0-6.7.1c-.4.1-1.3.1-2.1.9-.6.7-.8 2.2-.8 2.2S2.2 9 2.2 10.7v1.5c0 1.8.2 3.5.2 3.5s.2 1.5.8 2.2c.8.8 1.9.8 2.4.9C7.4 19 12 19 12 19s3.9 0 6.7-.2c.4-.1 1.3-.1 2.1-.9.6-.7.8-2.2.8-2.2s.2-1.7.2-3.5v-1.5c0-1.7-.2-3.5-.2-3.5zM9.9 14.6V8.9l5.4 2.9-5.4 2.8z"/></svg>
+        Watch on YouTube
+      </a>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>

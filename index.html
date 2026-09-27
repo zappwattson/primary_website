@@ -40,11 +40,17 @@
   }
 
   .banner {
-    position: relative;
-    display: block;
-    width: 100%;
-    background: url('images/ZappWattson_Banner.jpg') center / contain no-repeat;
-  }
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.banner-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 20px 20px 0 0;
+}
 
   .banner::before {
     content: '';
@@ -53,12 +59,15 @@
   }
 
   .banner-text {
-    position: absolute;
-    left: 5%;
-    right: 5%;
-    bottom: 6%;
-    z-index: 1;
-  }
+  position: absolute;
+  left: 5%;
+  right: 5%;
+  bottom: 6%;
+  z-index: 1;
+  background: rgba(20, 20, 28, .5);
+  padding: 8px 14px;
+  border-radius: 8px;
+}
 
   .banner-text h1 {
     font: 400 clamp(24px, 6vw, 50px) / 1.1 'Russo One', sans-serif;
@@ -186,7 +195,8 @@
 <div class="main">
   <div class="card">
     <div class="banner">
-      <div class="banner-text">
+  <img class="banner-img" src="images/ZappWattson_Banner.jpg" alt="Zapp Wattson banner">
+  <div class="banner-text">
         <p style="text-align: right;">We're Zapp Wattson and Pixel (a.k.a. Pixie), <br>your friendly electrical VTuber friends!</p>
       </div>
     </div>

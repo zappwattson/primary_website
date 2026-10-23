@@ -12,7 +12,7 @@ Office BG design & composition | Mocie | https://x.com/art_mocie
 Logo reveal & stinger | Euvity | https://x.com/euvityworks
 Chat widget | WasabiStudio |https://x.com/_WasabiStudio_
 Stream schedule | StefanusHendy98 |https://x.com/stefanushendy98
-Emotes | Nebura Nekoshima Studio & MeowStreamShop |https://x.com/NeburaNekoshima
+Emotes | Nebura Nekoshima Studio |https://x.com/NeburaNekoshima
 Emotes | MeowStreamShop | https://x.com/MeowStreamShop
 Social media banner design (YT/Twitter) | Soulnime | https://x.com/soulnime_mv
 Debut teaser video composition | hitorinee | https://x.com/hitorinee_

@@ -16,30 +16,51 @@ body {
     url('images/Background_Texture.jpg') center / cover fixed no-repeat;
 }
 
-.nav {
+.bar {
+  position: relative;
   display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: 24px;
+  align-items: center;
+  margin-bottom: 16px;
 }
 
+.menu-toggle,
 .nav a {
   padding: 10px 16px;
+  border: 0;
   border-radius: 8px;
   background: rgba(20, 20, 28, .5);
   color: #fff;
   font: 400 14px 'Russo One', sans-serif;
   text-align: center;
   text-decoration: none;
+  cursor: pointer;
   transition: background .15s ease;
 }
 
+.menu-toggle:hover,
 .nav a:hover {
   background: rgba(20, 20, 28, .8);
 }
 
 .nav a.active {
   background: linear-gradient(90deg, #5819A8, #78BEFF);
+}
+
+.nav {
+  display: none;
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  z-index: 5;
+  flex-direction: column;
+  gap: 6px;
+  padding: 8px;
+  border-radius: 12px;
+  background: rgba(20, 20, 28, .95);
+}
+
+.nav.open {
+  display: flex;
 }
 
 .main {
@@ -231,9 +252,9 @@ body {
 }
 
 .lists {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 18px 48px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px 20px;
 }
 
 .lists ul {
@@ -384,6 +405,10 @@ th {
   font-weight: 600;
 }
 
+.numbered td:nth-child(3) {
+  white-space: nowrap;
+}
+
 .numbered th:first-child,
 .numbered td:first-child {
   width: 56px;
@@ -392,6 +417,7 @@ th {
 
 td a {
   margin-right: 10px;
+  white-space: nowrap;
   color: #ADE7FF;
   text-decoration: none;
 }
@@ -460,19 +486,63 @@ td a:hover {
   cursor: pointer;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1360px) {
+  .bar {
+    margin: 0;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
   .nav {
+    display: flex;
     position: fixed;
     top: 50%;
     right: calc(50% + 424px);
-    z-index: 1;
-    flex-direction: column;
-    margin: 0;
+    left: auto;
+    gap: 10px;
+    padding: 0;
+    border-radius: 0;
+    background: none;
     transform: translateY(-50%);
   }
 }
 
 @media (max-width: 600px) {
+  body {
+    padding: 16px;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .banner-text {
+    position: static;
+    display: block;
+    margin: 12px 16px 0;
+  }
+
+  .banner-text p {
+    margin-top: 0;
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .body {
+    justify-content: center;
+    padding: 14px 16px 18px;
+  }
+
+  .content {
+    padding: 20px 16px 24px;
+  }
+
+  .profile {
+    padding: 16px;
+  }
+
   .intro {
     flex-direction: column;
     align-items: stretch;
@@ -482,8 +552,61 @@ td a:hover {
     align-self: center;
   }
 
-  .facts {
+  .facts,
+  .lists {
     grid-template-columns: 1fr;
+  }
+
+  .games-wrap {
+    height: 55vh;
+  }
+
+  .numbered thead,
+  .numbered tr.blank {
+    display: none;
+  }
+
+  .numbered,
+  .numbered tbody {
+    display: block;
+  }
+
+  .numbered tr {
+    display: grid;
+    grid-template-columns: 44px 1fr;
+    gap: 4px 8px;
+    padding: 12px 14px;
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+  }
+
+  .numbered td {
+    grid-column: 2;
+    padding: 0;
+    border: 0;
+  }
+
+  .numbered td:first-child {
+    grid-column: 1;
+    grid-row: 1 / span 4;
+    width: auto;
+  }
+
+  .numbered td:first-child::before {
+    content: '#';
+  }
+
+  .numbered td:nth-child(2) {
+    font-weight: 600;
+  }
+
+  .numbered td:nth-child(3),
+  .numbered td:nth-child(5) {
+    font-size: 13px;
+    opacity: .85;
+  }
+
+  .numbered td:empty {
+    display: none;
   }
 }
 

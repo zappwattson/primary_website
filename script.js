@@ -14,6 +14,17 @@ show();
 setTimeout(() => track.classList.add('slide'));
 addEventListener('hashchange', show);
 
+const nav = document.querySelector('.nav');
+const menuToggle = document.getElementById('menu-toggle');
+
+const setMenu = open => {
+  nav.classList.toggle('open', open);
+  menuToggle.setAttribute('aria-expanded', open);
+};
+
+menuToggle.addEventListener('click', () => setMenu(!nav.classList.contains('open')));
+document.addEventListener('click', e => { if (!menuToggle.contains(e.target)) setMenu(false); });
+
 const link = (text, url) => Object.assign(document.createElement('a'), {
   textContent: text,
   href: /^https?:\/\//i.test(url) ? url : '#',
@@ -83,7 +94,7 @@ const letterButtons = [...'#ABCDEFGHIJKLMNOPQRSTUVWXYZ'].map(letter => {
 });
 letterBar.append(...letterButtons);
 
-const blankRow = () => Object.assign(row('\u00A0', '', '', '', ''), { ariaHidden: 'true' });
+const blankRow = () => Object.assign(row('\u00A0', '', '', '', ''), { className: 'blank', ariaHidden: 'true' });
 
 function showGames() {
   const list = orders[order];
@@ -176,4 +187,9 @@ const modal = document.getElementById('contactModal');
 document.querySelector('.email-trigger').addEventListener('click', () => modal.classList.add('open'));
 document.querySelector('.modal-close').addEventListener('click', () => modal.classList.remove('open'));
 modal.addEventListener('click', e => { if (e.target === modal) modal.classList.remove('open'); });
-addEventListener('keydown', e => { if (e.key === 'Escape') modal.classList.remove('open'); });
+addEventListener('keydown', e => {
+  if (e.key === 'Escape') {
+    modal.classList.remove('open');
+    setMenu(false);
+  }
+});

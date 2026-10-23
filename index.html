@@ -12,14 +12,17 @@
 </head>
 <body>
 
-<nav class="nav">
-  <a href="#home">Home</a>
-  <a href="#zapp">About Zapp</a>
-  <a href="#pixel">About Pixel</a>
-  <a href="#games">1000 Game Completion</a>
-  <a href="#credits">Credits</a>
-  <a href="https://discord.gg/AyVsdJZyUH">Join our Discord Server</a>
-</nav>
+<header class="bar">
+  <button type="button" class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="nav">Menu <span aria-hidden="true">☰</span></button>
+  <nav class="nav" id="nav">
+    <a href="#home">Home</a>
+    <a href="#zapp">About Zapp</a>
+    <a href="#pixel">About Pixel</a>
+    <a href="#games">1000 Game Completion</a>
+    <a href="#credits">Credits</a>
+    <a href="https://discord.gg/AyVsdJZyUH" target="_blank" rel="noopener noreferrer">Join our Discord Server</a>
+  </nav>
+</header>
 
 <div class="main">
   <div class="track">
@@ -97,7 +100,7 @@
             <button type="button" data-sort="name">Alphabetical</button>
           </div>
           <div class="letters" id="letters" hidden></div>
-          <div class="table-wrap">
+          <div class="table-wrap games-wrap">
             <table class="numbered">
               <thead>
                 <tr><th>#</th><th>Game</th><th>Date Beaten</th><th>Streams</th><th>Notes</th></tr>

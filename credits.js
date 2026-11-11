@@ -5,7 +5,9 @@ BGM composition & lore audio engineer | Rumi Akari | https://x.com/rumi_akari
 Logo and emblem design | sasanao22 | https://x.com/sasanao22
 Chat & overlay design | ItzWuca | https://x.com/ItzWuca
 Starting soon, ending, lore, and KV illustrations | Mishima Nina | https://x.com/m_nina_illust
-"BRB" design, composition, and animation | ShiningRie | https://x.com/ShiningRie
+Zapp's "BRB" design, composition, and animation | ShiningRie | https://x.com/ShiningRie
+Pixie's "BRB" design and illustration | KKohe | https://www.instagram.com/kkohe24
+Pixie's "BRB" Animation | Shoraworks | https://x.com/ShoraWorks_
 L2D animation (Starting soon/ending/lore) | Shoraworks | https://x.com/ShoraWorks_
 Lore video composition | Shoraworks |https://x.com/ShoraWorks_
 Office BG design & composition | Mocie | https://x.com/art_mocie 

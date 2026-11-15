@@ -13,4 +13,5 @@ const gamesList = `
 2026-10-16 | Crash Bandicoot (N. Sane Trilogy) | https://www.youtube.com/watch?v=1lH_F6eKbk0&list=PLBOr-fjJgCOM
 2026-10-28 | Stray | https://www.youtube.com/watch?v=8K0kb7J78f0&list=PLCaVqJiAVlkc
 2026-11-10 | Luigi's Mansion | https://www.youtube.com/watch?v=KECIFjMFMpo&list=PLS-T1zJ4ywMU
+2026-11-14 | Zelda: Majora's Mask | https://www.youtube.com/playlist?list=PLJN_I6Ep0a7A | All Masks
 `;

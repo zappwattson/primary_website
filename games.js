@@ -15,4 +15,5 @@ const gamesList = `
 2026-11-10 | Luigi's Mansion | https://www.youtube.com/watch?v=KECIFjMFMpo&list=PLS-T1zJ4ywMU
 2026-11-14 | Zelda: Majora's Mask | https://www.youtube.com/playlist?list=PLJN_I6Ep0a7A | All Masks
 2026-11-15 | Sonic the Hedgehog 1 | https://www.youtube.com/live/R7RvKQBi_bE | Sonic Origins version, playing as Knuckles
+2026-11-17 | Zelda: Ocarina of Time Remake | https://www.youtube.com/watch?v=Z0zLyE7JRFg&list=PLfbKib-YmDaI
 `;

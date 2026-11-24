@@ -17,4 +17,5 @@ const gamesList = `
 2026-11-15 | Sonic the Hedgehog 1 | https://www.youtube.com/live/R7RvKQBi_bE | Sonic Origins version, playing as Knuckles
 2026-11-17 | Zelda: Ocarina of Time Remake | https://www.youtube.com/watch?v=Z0zLyE7JRFg&list=PLfbKib-YmDaI
 2026-11-22 | Sonic the Hedgehog 2 | https://www.youtube.com/live/M_NxxYqOywI | Sonic Origins version, playing as Amy
+2026-11-23 | Katamari Damacy REROLL | https://www.youtube.com/watch?v=shpWhM_dD6g&list=PLYivnYh2nSqM
 `;

@@ -18,4 +18,5 @@ const gamesList = `
 2026-11-17 | Zelda: Ocarina of Time Remake | https://www.youtube.com/watch?v=Z0zLyE7JRFg&list=PLfbKib-YmDaI
 2026-11-22 | Sonic the Hedgehog 2 | https://www.youtube.com/live/M_NxxYqOywI | Sonic Origins version, playing as Amy
 2026-11-23 | Katamari Damacy REROLL | https://www.youtube.com/watch?v=shpWhM_dD6g&list=PLYivnYh2nSqM
+2026-11-24 | Super Mario World | https://www.youtube.com/watch?v=Nr__7IenR6A&list=PLCNv_3cz9zbY | All Levels
 `;
